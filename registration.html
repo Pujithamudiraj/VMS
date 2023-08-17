@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin:0;
+            padding:0;
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-color: #f4f4f4;
+            
+        }
+        .container {
+            max-width: 800px;
+            margin: 10px,80px;
+            padding: 20px;
+            background-color: #fff;
+            background-size:cover;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="date"], select {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .note{
+        color: red;
+        font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2><u>Registration</u></h2>
+        <font color="blue">
+        <center> <h2>(Child Vaccination)</h2></center></font>
+        <form>
+            <label><b>Username</b><span class="error">*</span></label></br>
+<input type="text" name="uname" placeholder="First Name" size="62" required /></br></br>
+
+<label><b>Last Name</b><span class="error">*</span></label></br>
+<input type="text" name="lname" placeholder="Enter Last Name" size="62" required/></br></br>
+<label><b>Gender</b><span class="error">*</span></label></br>
+<input type="radio" name="gender" value="Male" style="margin-left: 20px" />Male
+<input type="radio" name="gender" value="Female" />Female
+</br></br>
+<label><b>Address</b><span class="error">*</span></label></br>
+<input type="text" name="city" placeholder="Your Address" size="62" required />
+
+</br></br>
+<label><b>Birth Date </b><span class="error">*</span><span class="note">( Note: Administrator use todays date )</span></label></br>
+    <input type="date" name="birth" required />
+
+<br><br>
+<label><b>You are a</b><span class="error">*</span></label></br>
+<select name="utype" class="option" required>
+    <option value="none" selected disabled hidden> Select an Option</option>
+    <option value="Admin">Vaccine Administrator</option>
+    <option value="Parent">Parent</option><br><br><br><br>
+    </select><br><br>
+   <label><b>Mobile Number</b><span class="error">*</span></label></br>
+<input type="text" name="mobile no." placeholder="Enter your mobile number" size="62" required/></br></br>
+<label><b>Email Address</b><span class="error">*</span></label></br>
+<input type="email" name="email" placeholder="Enter email address" size="62" required/></br></br>
+
+<label><b>Password</b><span class="error">*</span></label></br>
+<input type="password" name="password" placeholder="Enter Password" size="62" required /><br><br><br><br>
+
+
+            
+                </select>
+            
+            <center><button type="submit"><b>Register</b></button></center><br>
+           <center> Already have an Account? <a href="index.html"><b>Login</b></a>
+
+</center>
+            
+        </form>
+    </div>
+</body>
+</html>

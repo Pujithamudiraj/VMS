@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Child Vaccination Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+        .login-container {
+            width: 500px;
+            margin: 150px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2><center><u>Child Vaccination Management</center></h2><br><br><br><br></u>
+        
+        
+        <label><b>Username</b><span class="error">*</span></label></br>
+<input type="text" name="uname" class="text" placeholder="Username" size="62" required /></br></br>
+
+<label><b>Password</b><span class="error">*</span></label></br>
+<input type="password" name="pass" class="text" placeholder="Enter Password" size="62" required /></br></br>
+
+           
+            <label><b>You are a</b><span class="error">*</span></label></br>
+<select name="utype" required>
+    <option value="none" selected disabled hidden> Select an Option</option>
+    <option value="Admin">Vaccine Administrator</option>
+    <option value="Parent">Parent</option></a>
+</select> <br><br><br>
+
+
+            <button type="submit"><a href="main.html">Login</button><br><br></a>
+        </form>
+       <center> Don't have an account yet?<a href="registration.html"><b>Register</b></a></center>
+       
+        
+        
+    </div>
+</body>
+</html>

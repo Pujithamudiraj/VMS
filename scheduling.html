@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.scheduling-container {
+            width: 700px;
+            height:700px;
+            margin: 150px auto;
+            padding: 0;
+            background-color: #F5F5F5;
+  
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+        }
+        .scheduling-container button {
+            width: 30%;
+            padding: 10px;
+            background-color: #3498db;
+            color: black;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+.scheduling-container button:hover {
+            background-color: grey;
+            
+        }
+  
+</style>
+   
+
+<title>Child Vaccine Scheduling</title>
+</head>
+<body>
+<div class="scheduling-container">
+  <header>
+    <center><h1><u>Child Vaccine Scheduling System</u></h1><center>
+  </header>
+  <main>
+
+    <section class="vaccine-list">
+      <h2><U>Upcoming Vaccines</h2></U>
+      <ul>
+        <li>Polio Vaccine - August 15</li>
+        <li>MMR Vaccine - September 10</li>
+        <li>Hepatitis B - October 21</li>
+        <li>Hepatitis A - November 30</li>
+        <li>PCV13 - December 15</li>
+        <!-- Add more vaccines here -->
+      </ul>
+    </section>
+    <section class="schedule-form">
+      <h2><u>Schedule a Vaccine for your child</u></h2>
+      <form>
+        <label for="childName">Child's Name:</label>
+        <input type="text" id="childName" name="childName" required><br><br><br>
+        <label for="vaccineType">Vaccine Type:</label>
+        <select id="vaccineType" name="vaccineType" required>
+          <option value="polio">Polio Vaccine</option>
+          <option value="mmr">MMR Vaccine</option>
+          <option value="Hepatitis B ">Hepatitis B </option>
+          <option value="Hepatitis A ">Hepatitis A </option>
+          <option value="PCV13">PCV13</option>
+          <!-- Add more options here -->
+        </select><br><br><br>
+        <label for="date">Preferred Date:</label> <input type="date" id="date" name="date" required><br><br><br>
+ <label for="hospital">Nearby Hospital:</label> <input type="text" id="hospital" name="hospital" required> <button type="submit">Schedule</button>
+
+      </form>
+    </section>
+  </main>
+  
+
+</body>
+</html>
+
+
